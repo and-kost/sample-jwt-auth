@@ -7,6 +7,7 @@ const UserDto = require('../dtos/user-dto');
 const ApiError = require('../utils/exeptions/api-error');
 
 class UserService {
+
     async registration(email, password) {
         const candidate = await UserModel.findOne({email})
         if (candidate) {

@@ -1,5 +1,5 @@
 const {Router} = require('express');
-const userController = require('../contollers/user-controller')
+const userController = require('./api/user/user-controller')
 const {body} = require('express-validator')
 const authMiddleware = require('../utils/middlewares/auth-middelware')
 
